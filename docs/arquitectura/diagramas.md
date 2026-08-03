@@ -49,3 +49,41 @@ classDiagram
     Usuario <|-- Docente
     Alumno "1" -- "*" Calificacion : obtiene
     Docente "1" -- "*" Calificacion : registra
+    ## 3. Diagrama de Despliegue (Infraestructura y Nube)
+
+```mermaid
+graph TD
+    subgraph Cliente["💻 Navegador Web / Usuario"]
+        UI["Interfaz Web (HTML/JS)"]
+    end
+
+    subgraph ServidorNube["☁️ Servidor de Producción / Contenedor"]
+        API["Backend / Servidor de Aplicación"]
+        BD[("Base de Datos Relacional")]
+    end
+
+    subgraph ServicioExterno["🤖 Servicios en la Nube"]
+        IA["API de Inteligencia Artificial (Gemini)"]
+    end
+
+    UI -->|Peticiones HTTP/REST| API
+    API -->|Consultas SQL| BD
+    API -->|Consumo de API REST| IA
+
+    graph TD
+    subgraph Cliente["💻 Navegador Web / Usuario"]
+        UI["Interfaz Web (HTML/JS)"]
+    end
+
+    subgraph ServidorNube["☁️ Servidor de Producción / Contenedor"]
+        API["Backend / Servidor de Aplicación"]
+        BD[("Base de Datos Relacional")]
+    end
+
+    subgraph ServicioExterno["🤖 Servicios en la Nube"]
+        IA["API de Inteligencia Artificial (Gemini)"]
+    end
+
+    UI -->|Peticiones HTTP/REST| API
+    API -->|Consultas SQL| BD
+    API -->|Consumo de API REST| IA
