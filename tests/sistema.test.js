@@ -1,8 +1,5 @@
 const assert = require('assert');
 
-// ==========================================
-// 1. FUNCIONES A PROBAR (REGLAS DE NEGOCIO - UNIDAD 3)
-// ==========================================
 
 /**
  * Calcula el promedio ponderado de un arreglo de calificaciones
@@ -14,7 +11,7 @@ function calcularPromedio(notas) {
 }
 
 /**
- * Valida si un usuario cumple el formato institucional de acceso
+ * Validar si el usuario cumple el formato institucional de acceso
  */
 function validarCredenciales(correo, password) {
     if (!correo || !password) return false;
@@ -23,11 +20,8 @@ function validarCredenciales(correo, password) {
     return correoValido && passwordValida;
 }
 
-// ==========================================
-// 2. SUITE DE PRUEBAS UNITARIAS AUTOMATIZADAS
-// ==========================================
 
-console.log('🧪 Ejecutando Suite de Pruebas Unitarias (Unidad 3)...\n');
+console.log(' Ejecutando Suite de Pruebas Unitarias \n');
 
 try {
     // Prueba 1: Cálculo del promedio académico correcto
@@ -49,8 +43,8 @@ try {
     assert.strictEqual(accesoDenegado, false, 'Correo o password sin formato debe ser denegado');
     console.log('✅ Prueba 4 Pasada: Seguridad de acceso validada correctamente');
 
-    console.log('\n🎉 ¡TODAS LAS PRUEBAS PASARON EXITOSAMENTE!');
+    console.log('\n ¡TODAS LAS PRUEBAS PASARON EXITOSAMENTE!');
 } catch (error) {
-    console.error('\n❌ ERROR EN LAS PRUEBAS:', error.message);
+    console.error('\n ERROR EN LAS PRUEBAS:', error.message);
     process.exit(1);
 }
