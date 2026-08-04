@@ -1,4 +1,4 @@
-# 🏫 Sistema de Control Escolar
+# Sistema de Control Escolar
 
 ![CI/CD Pipeline](https://github.com/zelmazxecj-bot/Sistema-escolar/actions/workflows/deploy.yml/badge.svg)
 ![Despliegue](https://img.shields.io/badge/despliegue-GitHub%20Pages-brightgreen)
@@ -7,23 +7,23 @@ Proyecto integrador para la gestión y control escolar, desarrollado como parte 
 
 ---
 
-## 🌐 Demo en Vivo
+## Demo en Vivo
 
 Puedes acceder a la versión desplegada en producción desde el siguiente enlace:
-👉 **[Ver Sistema Escolar en GitHub Pages](https://zelmazxecj-bot.github.io/Sistema-escolar/)**
+ **[Ver Sistema Escolar en GitHub Pages](https://zelmazxecj-bot.github.io/Sistema-escolar/)**
 
 ---
 
-## 🛠️ Tecnologías Utilizadas
+## Tecnologías Utilizadas
 
-* **HTML5 / CSS3 / JavaScript (ES6+):** Interfaz de usuario y lógica del cliente.
+* **HTML5 / CSS3 / JavaScript:** Interfaz de usuario y lógica del cliente.
 * **Node.js:** Entorno de ejecución para pruebas automáticas.
 * **GitHub Actions:** Pipeline de CI/CD (Integración y Despliegue Continuo).
 * **GitHub Pages:** Hosting y servidor de producción en la nube.
 
 ---
 
-## 📂 Estructura del Proyecto
+## Estructura del Proyecto
 
 ```text
 SISTEMA ESCOLAR/
